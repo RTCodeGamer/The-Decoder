@@ -1,0 +1,64 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Decoder</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+
+        input {
+            width: 300px;
+            padding: 12px;
+            font-size: 18px;
+        }
+
+        #result {
+            margin-top: 25px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The Decoder</h1>
+
+    <input
+        type="text"
+        id="answer"
+        placeholder="Type something..."
+    >
+
+    <div id="result"></div>
+
+    <script>
+        const input = document.getElementById("answer");
+        const result = document.getElementById("result");
+
+        input.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                if (input.value === "1220 m^1") {
+                    result.textContent = "santosh terala is a very sus boi";
+                } else {
+                    result.textContent = "Try Again!";
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+```
